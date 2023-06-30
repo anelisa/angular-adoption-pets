@@ -1,0 +1,36 @@
+<div class="container-register-pet">
+    <h1>Registrar pets para adoção</h1>
+
+    <form class="my-5" (ngSubmit)="submit()" [formGroup]="formGroup">
+        <div class="m-1">
+            <label class="mr-1" for="name">Nome do Pet:</label>
+            <input id="name" pInputText type="text" formControlName="name"/>
+        </div>
+        <div class="m-1">
+            <label class="mr-1" for="age">Idade:</label>
+            <input id="age" pInputText type="text" formControlName="age"/>
+        </div>
+        <div class="m-1">
+            <label class="mr-1" for="breed">Raça:</label>
+            <input id="breed" pInputText type="text" formControlName="breed"/>
+        </div>
+        <div class="m-1">
+            <label class="mr-1" for="species">Especie:</label>
+            <input id="species" pInputText type="text" formControlName="species"/>
+        </div>
+        <div class="m-1">
+            <label class="mr-1" for="weight">Peso:</label>
+            <input id="weight" pInputText type="text" formControlName="weight"/>
+        </div>
+        <div class="m-1">
+            <label class="mr-1" for="colorFur">Cor do pelo:</label>
+            <input id="colorFur" pInputText type="text" formControlName="colorFur"/>
+        </div>
+        <div class="m-1">
+            <label class="mr-1" for="gender">Sexo:</label>
+            <input id="gender" pInputText type="text" formControlName="gender"/>
+        </div>
+        <button class="mt-5" pButton icon="pi pi-save" type="submit" label="Salvar">
+        </button>
+    </form>
+</div>

@@ -1,0 +1,22 @@
+.image-pet{
+    width: 120px;
+    height: 150px;
+}
+
+.card-pet {
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 50px;
+}
+
+.container-list-pets{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+}

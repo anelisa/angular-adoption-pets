@@ -1,0 +1,18 @@
+<div class="container-list-pets">
+    <div *ngFor="let listPet of petDetails">
+        <div class="card-pet">
+            <img class="image-pet" src="../../../assets/kirara.JPG"/>
+            <p>{{listPet.name}}</p>
+            <p>{{listPet.gender}}</p>
+            <p>
+                {{listPet.species}}
+            </p>
+            <p>Peso: {{listPet.weight}}</p>
+            <p>Pelagem: {{listPet.colorFur}}</p>
+            <p-button *ngIf="!listPet.adoption" label="Adotar"></p-button>
+            <p *ngIf="listPet.adoption">ADOTADO</p>
+        </div>
+    </div>  
+</div>
+
+

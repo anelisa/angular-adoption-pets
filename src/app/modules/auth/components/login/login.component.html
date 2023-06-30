@@ -1,0 +1,25 @@
+<div>
+    <h1>Login</h1>
+    <form (ngSubmit)="login()" [formGroup]="formGroup">
+        <div>
+            <label for="email">
+                Login
+            </label>
+            <input id="email" pInputText type="text" formControlName="email"/>
+        </div>
+        <div>
+            <label for="pass">
+                Senha
+            </label>
+            <input id="pass" pInputText type="text" formControlName="pass" />
+        </div>
+        <button
+        pButton
+        icon="pi pi-sign-in"
+        type="submit"
+        label="Login"
+        class="p-button-primary"
+      >
+      </button>
+    </form>
+</div>
